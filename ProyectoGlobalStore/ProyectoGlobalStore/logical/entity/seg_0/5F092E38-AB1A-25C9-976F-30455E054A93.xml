@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F092E38-AB1A-25C9-976F-30455E054A93" name="PELICULA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:47:41 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PEFechaEstreno" id="4C68F0D2-6BE3-9837-1A3E-32CCCFDDD151">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:02:59 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PEVideo" id="4E2526A9-987C-15E3-41A0-9C293DA736FA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:03:28 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PEDescripcion" id="C8C50CF7-6548-751B-48E5-38E6D497F78D">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:03:33 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PELenguaje" id="F6A9C7D9-BE99-B3F0-3587-A4FACD6682C8">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:04:09 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PESubtitulos" id="C71BE673-BB1E-A197-9BE7-25A5AAC781CC">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:04:57 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PEDuracion" id="751DC4A3-C8D3-C065-C421-583BFF2D59DB">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:06:11 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PECategoria" id="516F0FCD-7985-2660-5C3B-86E641FC7950">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:06:35 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+</Entity>

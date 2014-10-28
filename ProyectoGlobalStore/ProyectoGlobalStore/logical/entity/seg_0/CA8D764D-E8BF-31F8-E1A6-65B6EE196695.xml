@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA8D764D-E8BF-31F8-E1A6-65B6EE196695" name="TIPO_TARJETA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:03:37 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TTId" id="4CB56715-388C-6CCD-A9E3-EA58A9D9E977">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:03:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TTNombre" id="911A9317-4BCD-2BB4-148D-D86A78507AE2">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:04:01 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="847128D7-771C-8FB2-EDA8-025D8E11C904" name="TIPO_TARJETA PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:03:59 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4CB56715-388C-6CCD-A9E3-EA58A9D9E977</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

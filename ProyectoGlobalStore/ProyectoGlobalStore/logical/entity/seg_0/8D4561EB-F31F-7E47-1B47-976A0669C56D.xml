@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D4561EB-F31F-7E47-1B47-976A0669C56D" name="TARJETA_CREDITO">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:59:01 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TDCNombreImpreso" id="67CA2D6B-1CFC-1653-A7BE-FFC7032BB22C">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:00:46 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TDCId" id="28C7C226-8897-FD53-9ADB-CF0CAB156226">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:59:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TDCFechaVencimiento" id="D990A23C-B89A-30AD-C65D-0264E5301F1F">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:01:35 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TDCBanco" id="96EE5362-9DA1-CC70-1FF6-1846E5F0C3B4">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:02:12 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TDCNumeroTarjeta" id="018DA592-34EC-EEE3-42C5-239712C947DC">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:02:26 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TTId" id="A333AF4A-F8DB-3A6F-DC86-5BBE3D1BF208">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:05:22 UTC</createdTime>
+<generatorID>1FB596F5-6F1A-E9C6-B8A8-D76F71E6E614</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>4CB56715-388C-6CCD-A9E3-EA58A9D9E977</referedAttribute>
+<use>0</use>
+</Attribute>
+<Attribute name="PECedula" id="2A8774FF-2966-A8BB-2308-604377612963">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:07:47 UTC</createdTime>
+<generatorID>B003D871-C7A8-1D43-D204-F9BEB77F66CB</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>4E0AA18A-B0AC-CE87-0B6A-3805FD106A12</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA0126B6-5450-CFE0-A49C-3B859620920C" name="TARJETA_CREDITO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 22:00:45 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>28C7C226-8897-FD53-9ADB-CF0CAB156226</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F47EB8EE-42A8-8A7B-6E35-0A4BF666CA39" name="GENERO_MUSICA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:51:51 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GMId" id="8E0DAD29-B270-9F10-45CB-9B2ADF3FF7A6">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:51:04 UTC</createdTime>
+<generatorID>67A4C5DD-B547-DC82-3658-C6C46775CB8F</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>08E0FF77-4609-EE34-5EA5-9CE61A7B0766</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="735D6AFE-A7AA-6D64-BB7C-F6FE3CD1DAF2" name="GENERO_MUSICA PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:51:04 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8E0DAD29-B270-9F10-45CB-9B2ADF3FF7A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ProyectoGlobalStore" id="3A35F338-FF66-1529-83A7-2E27771F917E" version="3.5">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 01:58:03 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3A35F338-FF66-1529-83A7-2E27771F917E</designId>
+</OSDM_Design>

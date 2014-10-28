@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A5EF47BC-B47D-E8A1-C891-8FFC421FBFCD" name="FACTURA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:16:50 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FAId" id="0D71A846-6A80-5A0B-F4A3-BC1B95443DE6">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:23:09 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="FAFechaEmision" id="7EA05B2C-6F8E-2105-6382-F3B967A293DB">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:23:19 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="17D252EC-DA06-ABC0-5BCE-ED7E797B5D5C" name="FACTURA PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:23:18 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D71A846-6A80-5A0B-F4A3-BC1B95443DE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

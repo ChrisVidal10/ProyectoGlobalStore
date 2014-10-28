@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1D90659-BA2F-DF94-6EA1-E1827C98CB69" name="USUARIO_ROLL">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USROId" id="A3BDE083-3C1E-284A-F61A-F2A0C27199C2">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>6BC45931-4911-5A38-403B-541E94B3D732</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="USROHistorial" id="CF73F786-BCFF-0ABA-A42E-37355A1BE265">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>BA793677-10D3-C4DB-EC77-4CDA22B04D7D</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="USId" id="EB69D730-4FBF-C3FE-9EAA-AA922CEC9F48">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<generatorID>6B7A3082-F3C8-C491-6BB4-77B1257EA07D</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>100B8312-F34C-9D49-E219-6F1B260B9B66</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>FE379DBC-9DF4-615E-E055-A27538FB1607</referedAttribute>
+<use>0</use>
+</Attribute>
+<Attribute name="ROId" id="D9914EF4-4EA9-53D9-6BFA-AAFAA0515368">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<generatorID>420481FD-65D2-FB94-CCBF-60ACC51A06C0</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>A4F419D0-4B19-526D-0FE1-D71540CE92B7</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>2B45FE41-8BA9-E34B-41BA-C82D6AEE663C</referedAttribute>
+<use>0</use>
+</Attribute>
+<Attribute name="ACId" id="DEB201B3-913E-6F69-09E9-17C823B75C2A">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<generatorID>0CB1AD64-CD28-4B3D-E60E-BACE9050D787</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>D2A0C46B-4F10-9966-05C4-DA872ED1B211</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>CFD5821C-CFF8-90FB-75BE-E7D774FE024F</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B06D9D1A-1C57-CF21-0CC9-459A30EAD5D7" name="USUARIO_ROLL PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3BDE083-3C1E-284A-F61A-F2A0C27199C2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

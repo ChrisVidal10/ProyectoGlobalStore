@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E39232F-CF18-8478-CA7E-A982F9D65B97" name="SO">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:22:04 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SOId" id="83EAA1D0-E823-6F05-24D1-BC532739295A">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:22:34 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="SOCaracteristicas" id="36AB687C-46B9-33F3-3B2B-18D7CF384BD1">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:22:41 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="SOCompañia" id="5241E39A-A325-583D-309A-23193F0C615A">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:23:16 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="SOFechaLanzamiento" id="E5FBA17A-1750-8158-C9D1-B9AD16ECB1C1">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:23:46 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="TSOId" id="169DEC95-2D3D-6585-B8AD-8CDE8A4712E9">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:31:56 UTC</createdTime>
+<generatorID>C660DE4B-2183-1D9F-1935-AACE95BCC656</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>B9C3A4CA-1C53-03FF-0284-AE95CE5F5B32</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9139FCA4-66B3-22F4-49CF-FD39B735EA70" name="SO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:22:40 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83EAA1D0-E823-6F05-24D1-BC532739295A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07C32BBD-4BF8-7115-7B71-54EF7B46D5BE" name="PROMOCION">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRId" id="4CDA52AA-DAE2-30E4-3AE5-DAB4B97DEA32">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>2288A83B-4AB4-61D0-B9B0-1AF4824803F1</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PRNombre" id="300517DD-0FE8-584E-E0CB-9A3D56CAF176">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>16E2A468-3448-2D4E-3E14-C7AA5A8DBD03</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PRFechaInicio" id="0F786A7C-9EE4-A5AE-246E-867F784BF0A4">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>9DB3F66B-2A62-022F-EDD6-0CAAB9C98E8A</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PRFechaFin" id="457440D8-164C-7B9B-5544-7BB9BF967762">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>53B3FE14-0C67-EC08-4B2A-7CDE2C87049C</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PRValor" id="214C0E37-EEBE-D42F-DDCB-B4C7676099A8">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>FFBD009E-48CB-907F-77CD-6938E19F64F7</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PREstado" id="3730CFFD-8EB2-905A-EFC6-9978180CA2BC">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>B954BA0D-3E07-2BC8-896B-C26DA6F03924</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PRDescripcion" id="8EC2DED1-11C4-1DD4-1CD2-5297193C1310">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>F38CDDB2-D7CA-6517-1F74-04B468C3FCCB</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PRCondiciones" id="0B493647-B7FC-AD3E-44F3-F349DCE5CE4C">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>E3B2AE3A-C23C-724B-1D7A-F5ED5EAB7B98</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5F327E00-43DB-4FCD-C4B1-D207898A07F0" name="PROMOCION PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:42:14 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4CDA52AA-DAE2-30E4-3AE5-DAB4B97DEA32</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

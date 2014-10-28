@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="48EACF69-458C-A453-6767-30458292A900" name="SO_APLICACION">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:24:12 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SOId" id="E537C6C0-D6BC-4E94-7E63-5F9B721A9CB6">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:27:11 UTC</createdTime>
+<generatorID>1CFC9E73-BB43-F52F-330C-B8EB7CF005B3</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>83EAA1D0-E823-6F05-24D1-BC532739295A</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74C0D879-0333-8238-23FB-7D093B9E9D68" name="SO_CONTENIDO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:26:38 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E537C6C0-D6BC-4E94-7E63-5F9B721A9CB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

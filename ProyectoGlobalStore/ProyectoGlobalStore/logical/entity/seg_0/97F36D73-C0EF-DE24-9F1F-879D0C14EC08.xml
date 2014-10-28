@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="97F36D73-C0EF-DE24-9F1F-879D0C14EC08" name="USUARIO">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USId" id="FE379DBC-9DF4-615E-E055-A27538FB1607">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>F235B03E-1A77-C169-29E7-A429DFFD14BA</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="USContrasena" id="30FBC7D9-6478-CA14-B047-4ABC9AA150F3">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>AB93DBAA-BCA3-7BCB-6C57-D99881EA3213</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="USUsername" id="FF9FAA32-80D7-F0CC-BF79-55FED70FE8C7">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>5CA40CE3-291B-1575-BDC1-A817CC4C2E30</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PECedula" id="7142B471-936C-16AE-BF0B-0C9117642B23">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:48:56 UTC</createdTime>
+<generatorID>43042577-722E-E42D-6CAA-583F90162CA2</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>4E0AA18A-B0AC-CE87-0B6A-3805FD106A12</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75E96065-4183-DEEA-11E9-03C8DE8D5F16" name="USUARIO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FE379DBC-9DF4-615E-E055-A27538FB1607</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CB4E953-22C8-602F-22CE-700148E16691" name="CALIFICACION">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:02:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CAId" id="B302835E-D868-8087-64DB-91CF2377C302">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:02:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>BBFCD476-3BF8-CE99-4FDD-B2F6FACC557C</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="CAValor" id="BF6CCE28-80B8-4BC3-2D3E-DB881A6F064D">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:02:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>4764D124-C8F8-195D-5E8A-61A7253A741E</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="CAFechaHora" id="012685C2-AC0C-C084-C5CD-557AE3AE312F">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:02:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>793B7467-1CBC-0531-9432-0C650DBA2CB5</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="PECedula" id="4CB67E4B-F6C4-2ADD-0AD6-A854C935E762">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:08:40 UTC</createdTime>
+<generatorID>ADFA44E9-10CA-DDBC-9BAD-B514674897E5</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>4E0AA18A-B0AC-CE87-0B6A-3805FD106A12</referedAttribute>
+<use>0</use>
+</Attribute>
+<Attribute name="COId" id="C905DE79-9D4D-6FFD-71D8-4EE6E1300D67">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:08:58 UTC</createdTime>
+<generatorID>CFA77CE4-4AA2-21DC-53C1-7BD2F1E16A7D</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>7B19FEBD-1027-AF27-B721-60A4FFABF60A</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C03904DE-5494-0383-CE1C-714A19AFCF2E" name="PUNTUACION PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:02:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B302835E-D868-8087-64DB-91CF2377C302</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

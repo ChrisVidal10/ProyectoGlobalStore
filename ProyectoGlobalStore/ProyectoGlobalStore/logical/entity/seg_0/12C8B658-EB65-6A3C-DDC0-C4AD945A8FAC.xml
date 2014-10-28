@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12C8B658-EB65-6A3C-DDC0-C4AD945A8FAC" name="ACCION">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ACId" id="CFD5821C-CFF8-90FB-75BE-E7D774FE024F">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>F8C83810-D316-9294-46B1-E3EC9E337F5E</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="ACDescripcion" id="028FCF67-C978-DE7D-B114-088CE95F23F5">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>C6CB3C87-E51D-DDC0-B6C2-D85F47CF00AF</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82CC7CF8-D9DF-87B8-4DBF-EBB8AF7975C6" name="ACCION PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:46:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CFD5821C-CFF8-90FB-75BE-E7D774FE024F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

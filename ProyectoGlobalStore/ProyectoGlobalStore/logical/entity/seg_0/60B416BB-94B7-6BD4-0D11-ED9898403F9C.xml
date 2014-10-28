@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="60B416BB-94B7-6BD4-0D11-ED9898403F9C" name="DESARROLLADOR">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:00:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DEId" id="EBF2CFAA-64B2-4C29-E921-3CC9DCA4638C">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:00:37 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="DENombre" id="2233067A-5C94-AC3D-1236-B5CBCA89670A">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:00:49 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="DETipo" id="69A661C8-10FA-2E7B-5798-E45FD38D46C0">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:02:34 UTC</createdTime>
+<comment>Tipo: Empresa, Particular</comment>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="LUId" id="B270C32A-897B-2245-0E76-3B348967EE96">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:08:47 UTC</createdTime>
+<generatorID>DEBE2399-7FEE-6803-B438-1B6299FC8616</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>AD924BA5-81AA-9E65-D0E6-544FA014EE5B</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CAE8C3EA-98EA-BCC1-ACF0-A4F5BD2E8A38" name="DESARROLLADOR PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:00:48 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EBF2CFAA-64B2-4C29-E921-3CC9DCA4638C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

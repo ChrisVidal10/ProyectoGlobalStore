@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD43EF10-7226-B35D-C4DB-B85546388454" name="VERSION">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:32:04 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VEId" id="A9A91D8D-BCB4-915F-5925-53D9EA947B9F">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:32:09 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="VENombre" id="170E3719-EE5F-D5D2-171C-12854D19CF94">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:32:27 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="VEFechaDistribucion" id="60A9FE82-1B78-9ADC-853F-E2B0F13DE076">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:32:31 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="VECaracteristicas" id="305E2F6B-FC28-61F5-1471-2998477CC13D">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:32:50 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="SOId" id="285D4447-F29E-8D12-E599-748C506E24ED">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:34:07 UTC</createdTime>
+<generatorID>A7BDE2EF-107F-59BB-78BE-2FD7F5CD6440</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>83EAA1D0-E823-6F05-24D1-BC532739295A</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E40D265C-5EAC-5AC0-FFCD-8F4939CF855E" name="VERSION PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 20:32:25 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9A91D8D-BCB4-915F-5925-53D9EA947B9F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

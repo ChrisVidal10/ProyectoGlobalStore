@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B26580A7-77BD-E527-6CFE-46E93B1460A4" name="ACTOR_PELICULA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:49:38 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ACId" id="EEDD3B7D-0C5E-8299-EADD-773B57E2DCB5">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:50:52 UTC</createdTime>
+<generatorID>CC4D08A0-D56B-8D63-513C-124CF231DE12</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>CFFDA14F-6153-8774-F770-73B07121F0B1</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2303002-8328-9B8E-B442-A0C4091CBCB5" name="ACTOR_PELICULA PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:50:52 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEDD3B7D-0C5E-8299-EADD-773B57E2DCB5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

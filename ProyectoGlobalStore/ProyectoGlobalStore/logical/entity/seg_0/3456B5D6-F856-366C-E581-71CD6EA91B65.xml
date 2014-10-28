@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3456B5D6-F856-366C-E581-71CD6EA91B65" name="CONTRATO">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:55:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COId" id="0B36975A-8176-A473-A34F-CFE17F23B9B6">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:55:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>61C6FF45-8996-D843-62B7-F05F010F3A88</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COFechaInicio" id="A960E81B-55C5-014F-7320-7069526AE331">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:55:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>B942FB38-5814-B5EC-7A34-BAB798D631C1</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COFechaFin" id="B381C252-CE0A-618F-536C-6115F62129F9">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:55:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>E8195CA2-4308-7982-AE85-A7988405CB56</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="COCausa" id="7BA3C1DC-E3B8-5DCB-2DB0-7099B0A3CBEF">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:55:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<importedID>3BBD056A-F87A-FB79-E23A-3EF5157C36B3</importedID>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="CAId" id="3737CFF4-4433-EB0A-D294-5C9FEE395C58">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:56:38 UTC</createdTime>
+<generatorID>03EF9C14-DE83-C8BC-D45F-DB4DE79A690D</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>91DC16B2-C2FE-5939-8240-02A0245565D8</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="130136A5-27F0-9C9E-6FDB-36DCCA356AE8" name="CONTRATO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:55:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B36975A-8176-A473-A34F-CFE17F23B9B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

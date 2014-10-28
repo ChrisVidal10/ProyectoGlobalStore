@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1529A780-17BD-1C15-81EC-E61B1369BE5F" name="DETALLE_FACTURA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:16:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COId" id="30A27420-7323-C301-EDDB-072270806206">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:21:10 UTC</createdTime>
+<generatorID>4F9949A7-8812-0172-AC7A-DAC673D4409D</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>7B19FEBD-1027-AF27-B721-60A4FFABF60A</referedAttribute>
+<use>0</use>
+</Attribute>
+<Attribute name="FAId" id="42D56CA1-6B95-6E4F-42D6-375DA4D34EF4">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:24:06 UTC</createdTime>
+<generatorID>E64E5657-50B2-6319-545A-3DCF108848DF</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>0D71A846-6A80-5A0B-F4A3-BC1B95443DE6</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0671443D-2FE6-6AB0-DE26-0CB757C59A22" name="DETALLE_FACTURA PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 21:21:10 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>30A27420-7323-C301-EDDB-072270806206</attributeRef>
+<attributeRef>42D56CA1-6B95-6E4F-42D6-375DA4D34EF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

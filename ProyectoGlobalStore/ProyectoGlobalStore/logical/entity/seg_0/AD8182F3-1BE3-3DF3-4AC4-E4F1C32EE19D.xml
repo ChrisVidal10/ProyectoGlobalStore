@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD8182F3-1BE3-3DF3-4AC4-E4F1C32EE19D" name="CONTENIDO">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 02:31:11 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COId" id="7B19FEBD-1027-AF27-B721-60A4FFABF60A">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:44:56 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COFechaRegistro" id="15509CA8-2DD3-DD4E-6CDE-D44D82E5FEB4">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:45:35 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="CONombre" id="72723F97-00D1-227A-DE39-2658EEC302BF">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:45:49 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COImagen" id="D5C47217-DF81-8C61-0335-D9CDC7618EE7">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:14:55 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COCosto" id="32893AE2-E607-C9DF-71C0-BA6EF72AF4CD">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:56:21 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COVecesValorada" id="E15ACE6D-8537-8B9E-9C5C-35451361A0CA">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:56:31 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COVecesDescargadas" id="C7CC8554-DDA4-A099-2E97-26B2D5D3FF2D">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:56:47 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="COTipo" id="50634771-F699-7904-CB62-7A9310E151B0">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 21:12:11 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="217F9313-188F-8CA0-77C0-FC1884654FA6" name="CONTENIDO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 18:44:59 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B19FEBD-1027-AF27-B721-60A4FFABF60A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

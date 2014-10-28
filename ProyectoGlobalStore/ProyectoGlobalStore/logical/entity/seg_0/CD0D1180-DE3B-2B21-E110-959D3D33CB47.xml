@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD0D1180-DE3B-2B21-E110-959D3D33CB47" name="GENERO_LIBRO">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-23 19:58:18 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GLId" id="5DE97F5E-23FA-41A7-0F4B-D73E4EF690F2">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:51:41 UTC</createdTime>
+<generatorID>2FF5BA59-C25A-6BAE-7A93-0FAE821D6D33</generatorID>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<referedAttribute>F02C7595-976D-21AC-7686-5D010E5AC40A</referedAttribute>
+<use>0</use>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE4C911A-A4BE-C0CB-55D2-897E7AB1F648" name="GENERO_LIBRO PK">
+<createdBy>Christian</createdBy>
+<createdTime>2014-10-24 20:51:41 UTC</createdTime>
+<ownerDesignName>ProyectoGlobalStore</ownerDesignName>
+<engineerTo>
+<item key="37CD3EFE-9321-151C-5E0F-D48506139499" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5DE97F5E-23FA-41A7-0F4B-D73E4EF690F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
