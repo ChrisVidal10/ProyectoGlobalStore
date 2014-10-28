@@ -1,0 +1,5 @@
+1. Listado de clientes que tienen al menos una tarjeta VISA asociada al sistema.
+2. Top 5 de las facturas con los mayores totales.
+3. Listado de los clientes que solo han descargado libros.
+4. Top 5 de los desarrolladores con mas aplicaciones en la tienda.
+5. Listado de los discos que nunca han sido vendidos.
