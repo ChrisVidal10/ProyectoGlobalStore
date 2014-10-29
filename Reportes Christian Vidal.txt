@@ -1,5 +1,20 @@
 1. Listado de clientes que tienen al menos una tarjeta VISA asociada al sistema.
+	JUSTIFICACION:	
+	Necesitamos saber la cantidad de los clientes que tienen almenos una TDC visa para poder crear una promocion nueva.	
+	Ejemplo. Los que usen Visa tendran un 20% de descuento por lo cual se necesita precedir la ganancia total en un periodo de 6 meses.
+
 2. Top 5 de las facturas con los mayores totales.
+	JUSTIFICACION:
+	Necesitamos saber los clientes que mas le han dado ganancias a la empresa en una sola comprar para obsequiar un premio.
+
 3. Listado de los clientes que solo han descargado libros.
+	JUSTIFICACION:
+	Para poder enviarles promociones de otros contenidos y extendernos en personas puramente lectoras.
+
 4. Top 5 de los desarrolladores con mas aplicaciones en la tienda.
+	JUSTIFICACION:
+	Llevar un control de quienes son los desarrolladores mas destacados.	
+
 5. Listado de los discos que nunca han sido vendidos.
+	JUSTIFICACION:
+	Para poder promocionarlos aun mas o para retirarlos de la tienda ya que no dan ninguna ganancia.

@@ -1,0 +1,21 @@
+1. Listado de clientes que tienen al menos 5 años registrados en el sistema.
+	JUSTIFICACION:	
+	Necesitamos saber la trayectoria de los clientes y se podran crear promociones por fidelidad.	
+	Ejemplo. Los que tengan 10 años tendran un 10% de descuento de todas sus compras el dia de aniversario en que se suscribio. 
+
+2. Top 5 de las peliculas mas vendidas.
+	JUSTIFICACION:
+	se pueden ofrecer en un 5-pack promocional a nuevos suscriptores.
+
+3. Listado de monto de ventas totales del mes por contenido.
+	JUSTIFICACION:ejemplo monto ventas totalesdel mes de noviembre de libros,peliculas,etc. para decidir que segmento del negocio produce ganancias
+	e invertir en la expansion de esa rama.
+	
+4. Top 5 de los libros mas vendidos.
+	JUSTIFICACION:
+	llevar un seguimiento de los autores con best-sellers y recomendar otras de sus publicaciones a clientes que los hayan comprado.	
+
+5. Listado de los clientes que no han efectuado compras en un año.
+	JUSTIFICACION:
+	para incentivarlos a comprar se le ofrece un descuento del 10% despues de un monto de compra. ejemplo al efectuar una compra de 500$ o mas se le otorga
+	un descuento del 3%.
