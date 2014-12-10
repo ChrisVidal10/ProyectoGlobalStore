@@ -42,13 +42,13 @@ create table `GS`.`CANTANTE` (
 );
 create table `GS`.`CARACTERISTICA` (
     CARAId int(20) not null,
-    CARANombre varchar(20) not null,
+    CARANombre varchar(100) not null,
     primary key (CARAId)
 );
 create table `GS`.`CARGO` (
     CARId int(20) not null,
-    CARSalario float(20) not null,
     CARNombre varchar(20) not null,
+    CARSalario float(20) not null,
     primary key (CARId)
 );
 create table `GS`.`CATEGORIA` (
@@ -68,14 +68,12 @@ create table `GS`.`COMENTARIO` (
 create table `GS`.`CONTENIDO` (
     COId int(20) not null,
     COFechaRegistro date not null,
-    COMFecha date not null,
-    COMHora time not null,
-    CONombre varchar(20) not null,
+	CONombre varchar(100) not null,
     COCosto float(20) not null,
     COVecesValorada int(20) not null,
     COVecesDescagada int(20) not null,
     COTipo int(1) not null, #1 APP, 2 PELICULA, 3 MUSICA, 4 LIBRO#
-    CAPDescripcion varchar(50),
+    CAPDescripcion varchar(500),
     CAPUltimaActualizacion date,
     CAPTamaño int(20),
     CAPVersionActual varchar(20),
@@ -83,16 +81,16 @@ create table `GS`.`CONTENIDO` (
     CAPClasificacion varchar(50),
     FKDEId int(20),
     CPEFechaEstreno date,
-    CPEDescripcion varchar(50),
+    CPEDescripcion varchar(500),
     CPEDuracion varchar(50),
     CMUFechaProduccion date,
     CMUNumeroCanciones int(20),
     CMUFormato varchar(50),
 	FKDISQId int(20),
-    CLBReseña varchar(50),
+    CLBReseña varchar(200),
     CLBFechaPublicacion date,
     CLBDescripcion varchar(50),
-    CLBCantidadPaginas int(20),
+    CLBCantidadPaginas int(200),
     CLBCodigoISBN varchar(50),
     FKEDId int(20),
     primary key (COId)
@@ -101,7 +99,7 @@ create table `GS`.`CONTRATO` (
     CONId int(20) not null,
     CONFechaI date not null,
     CONFechaF date not null,
-	CONCausa varchar (20)not null,
+	CONCausa varchar (200)not null,
 	FKPERId int(20)not null,
 	FKCARId int(20)not null,
 	primary key (CONId)
@@ -331,7 +329,7 @@ create table `GS`.`VERSION_CAR` (
 );
 create table `GS`.`VIDEO` (
     VIDId int(20)not null,
-	VIDNombre varchar(20) not null,
+	VIDNombre varchar(200) not null,
 	FKCOId int (20) not null,
 	primary key (VIDId)
 );
