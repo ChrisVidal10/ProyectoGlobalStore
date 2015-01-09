@@ -75,11 +75,11 @@ create table `GS`.`CONTENIDO` (
     COTipo int(1) not null, #1 APP, 2 PELICULA, 3 MUSICA, 4 LIBRO#
     CAPDescripcion varchar(500),
     CAPUltimaActualizacion date,
-    CAPTamaño int(20),
-    CAPVersionActual varchar(20),
-    CAPVersionSO varchar(20),
-    CAPClasificacion varchar(50),
-    FKDEId int(20),
+    CAPTamaño int(200),
+    CAPVersionActual varchar(200),
+    CAPVersionSO varchar(200),
+    CAPClasificacion varchar(200),
+    FKDEId int(200),
     CPEFechaEstreno date,
     CPEDescripcion varchar(500),
     CPEDuracion varchar(50),
@@ -232,7 +232,7 @@ PERTelefono				varchar(20),
 PERCorreo				varchar(50)not null,
 PERTipo					int		(1)  not null, #1 EMPLEADO, 2 CLIENTE#
 PEMNivelEducativo	    int(1), #1 NA, 2 PRIMARIA, 3 SECUNDARIA, 4 TECNICO, 5 LICENCIADO, 6 POSTGRADO#
-PEMGrupoSanguineo	    int(1), 
+PEMGrupoSanguineo	    int(1), #1 A, 2 B , 3 AB, 4 O
 PECLEdoCivil            int(1), #1 SOLTERO, 2 CASADO, 3 DIVORCIADO, 4 VIUDO#
 PCLFechaRegistro        date,
 PUSUsername varchar (20) not null, 

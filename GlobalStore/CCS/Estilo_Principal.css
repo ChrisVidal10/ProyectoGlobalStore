@@ -1,0 +1,210 @@
+@charset "UTF-8";
+#Principal {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #000;
+	height: 600px;
+	
+	
+}
+
+body {
+	background-repeat: repeat;
+	background-color: #333;
+	height: 600px;
+}
+
+  
+#Principal #Encabezado {
+	background-image: url(../Imagenes/top-apps-1920.jpg);
+	width: 900px;
+	height: 200px;
+	background-color: #D6D6D6;
+}
+
+ 
+#Principal #Contenido {
+	background-color: #FFF;
+	height: 500px;
+	float: left;
+	width: 840px;
+	padding: 30px;
+}
+
+
+#Principal #Contenido1 {
+	background-image: url("../Imagenes/carbonFiber_1680.jpg");
+	
+	height: 500px;
+	float: left;
+	width: 840px;
+	padding: 30px;
+}
+
+#Principal #Pie {
+	background-image: url(../Imagenes/Pie.jpg);
+	height: 37px;
+	width: 900px;
+	padding-top: 25px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	float: left;
+	background-color: #000;
+}
+
+
+#Principal #Contenido #Texto {
+	width: 600px;
+	float: left;
+	margin-right: 30px;
+	font-size: 12px;
+}
+#Principal #Contenido #Imagenes {
+	width: 400px;
+	float: left;
+	margin: auto;
+}
+#Principal #Menu img {
+	border-color: #A00;
+	background-color: #FFFFFF;
+}
+
+#Principal #Contenido  li 
+{ 
+color:black;
+list-style: none;
+border: none;
+padding-bottom: 20px;
+}
+
+
+
+
+
+
+#Principal #menu
+{
+	background-color: #FFFFFF;
+	width: 200px;
+	height: 155px;
+	position: relative;
+	border: 1px solid #999;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+	padding: 0px;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#Principal #menu ul
+{
+	list-style-type: none;
+	margin: 5px;
+	padding: 0;
+	text-align: center;
+}
+
+
+#Principal #menu li
+{
+	margin: 10px auto;
+	position: relative;
+	padding: 5px;
+	color: #FFFFFF;
+	text-align: center;
+	display: block;
+	width: 150px;
+	background-color: #800000;
+	text-decoration: none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#Principal #menu li:hover
+{
+	color: #FFFF00;
+	border: thin none #A00;
+	background-color: #FF0000;
+}
+
+#Principal #menu li.activado
+{
+	text-decoration: none;
+	color: #fff;
+	background-color: #FF0000;
+}
+
+
+#Principal .pestañas
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	height: 215px;
+	color: #F00;
+}
+
+#Principal .pestañas ul
+{
+	width: 785px;
+	height: 215px;
+	margin: 0px;
+	padding: 0px;
+	background: #e39c4a;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+}
+
+#Principal .pestañas li
+{
+	display: block;
+	text-align: center;
+	font: 13px/35px Verdana, Geneva, sans-serif;
+	border: 1px solid #999;
+	margin: 5px 0px 0px 5px;
+	padding: 0px;
+	width: 104px;
+	height: 35px;
+	color: #000;
+	cursor: pointer;
+	outline: none;
+	text-transform: uppercase;
+	float: left;
+	background-color: #FFFFFF;
+}
+
+#Principal .pestañas a
+{
+	outline: none;
+	color: #000;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#consultar, #modificar, #eliminar, #insertar, #cliente
+{
+	display: none;
+}
+#Principal #Contenido #Texto {
+	height: 500px;
+}
+#Principal #Contenido #texto2 {
+	float: right;
+	height: 500px;
+	width: 400px;
+}
