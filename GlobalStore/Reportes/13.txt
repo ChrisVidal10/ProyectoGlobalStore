@@ -1,0 +1,5 @@
+select c.cofecharegistro , c.CONombre, c.COVecesDescagada, (c.COVecesDescagada*c.COCosto) as TotalRecaudado
+ FROM gs.contenido c 
+where c.COTipo=1 OR c.COTipo=2 OR c.COTipo=3 or c.COTipo=4 
+order by c.COVecesDescagada 
+LIMIT 10

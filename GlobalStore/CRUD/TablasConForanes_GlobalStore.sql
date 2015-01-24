@@ -82,7 +82,7 @@ create table `GS`.`CONTENIDO` (
     FKDEId int(200),
     CPEFechaEstreno date,
     CPEDescripcion varchar(500),
-    CPEDuracion varchar(50),
+    CPEDuracion int(255),
     CMUFechaProduccion date,
     CMUNumeroCanciones int(20),
     CMUFormato varchar(50),
@@ -221,7 +221,7 @@ create table `GS`.`PELICULA_CATEGORIA` (
 create table 	`GS` . `PERSONA`
 (
 PERId 					int		(20) not null, 
-PERCedula 					int		(20) not null,
+PERCedula 					int		(255) not null,
 PERPnombre 				varchar	(20) not null,
 PERPapellido 			varchar	(20) not null,
 PERSnombre 				varchar (20) ,
@@ -231,6 +231,7 @@ PERFecha_nacimiento		date		 not null,
 PERTelefono				varchar(20),
 PERCorreo				varchar(50)not null,
 PERTipo					int		(1)  not null, #1 EMPLEADO, 2 CLIENTE#
+PEMStatus				int(1),# 1 activo, 2 inactivo
 PEMNivelEducativo	    int(1), #1 NA, 2 PRIMARIA, 3 SECUNDARIA, 4 TECNICO, 5 LICENCIADO, 6 POSTGRADO#
 PEMGrupoSanguineo	    int(1), #1 A, 2 B , 3 AB, 4 O
 PECLEdoCivil            int(1), #1 SOLTERO, 2 CASADO, 3 DIVORCIADO, 4 VIUDO#
@@ -262,6 +263,7 @@ create table `GS`.`ROL` (
 );
 create table `GS`.`SO` (
     SOId int(20)not null,
+	SONombre Varchar (30)not null,
 	SOFechaLanzamiento date not null,
 	FKTSOId int(20)not null,
 	primary key (SOId)

@@ -11,33 +11,50 @@
 <div id="Principal">
 		  <div id="Encabezado">
 		  </div>
-    <div id="Menu"><a href="Index.php"><img src="Imagenes/Boton_Cines_Principal.jpeg" alt="btn_principal" width="225" height="60" border="0" /></a><a href="Vehiculos.php"><img src="Imagenes/Boton_Cines_Cines.jpg" alt="btn_vehiculos" width="225" height="60" border="0" /></a><a href="MiCuenta.php"><img src="Imagenes/Boton_Cines_MiCuenta.jpg" alt="btn_micuenta" width="225" height="60" border="0" /></a><a href="Nosotros.php"><img src="Imagenes/Boton_Cines_Nosotros.jpg" alt="btn_nosotros" width="225" height="60" border="0" /></a></div>
+    <div id="Menu"><a href="Index.php"><img src="Imagenes/boton_gs_principal.jpeg" alt="btn_principal" width="225" height="60" border="0" /></a><a href="Vehiculos.php"><img src="Imagenes/boton_gs_cuenta.jpeg" alt="btn_vehiculos" width="225" height="60" border="0" /></a><a href="MiCuenta.php"><img src="Imagenes/boton_gs_nosotros.jpeg" alt="btn_micuenta" width="225" height="60" border="0" /></a><a href="Nosotros.php"><img src="Imagenes/boton_gs_contacto.jpeg" alt="btn_nosotros" width="225" height="60" border="0" /></a></div>
 	
 	<div id="Contenido">
 	<div id="Texto">
-	<h1>Eliminar Persona</h1>
-	<form id="Delete_Persona" name="DeletePersona" action="delete_Persona.php" method="POST">
+	<h1>Eliminar Contenido</h1>
+	<form id="Delete_Persona" name="DeletePersona" action="delete_Contenido.php" method="POST">
 	</br>
 	</br>	
-	<label for ="LUDescripcion"> Persona: </label>
+	<label for ="LUDescripcion"> Contenido: </label>
 	</br>
 	</br>
-    <select name="Persona">
+    <select name="COId" id="COId">
 	<?php 
 		$enlace =  mysql_connect('127.0.0.1', 'root', '');
 		if (!$enlace) 
 		{
 			die('No pudo conectarse: ' . mysql_error());
 		}
-		$Us 	= mysql_query("SELECT * FROM gs.persona");	
+		$Us 	= mysql_query("SELECT * FROM gs.contenido");	
 		$num_registros = mysql_num_rows($Us);
 		for ($i=0;$i<=$num_registros;$i++)
 		{
-		$modelo 	= mysql_query("SELECT * FROM gs.persona as L WHERE L.PERId='$i'");
+		$modelo 	= mysql_query("SELECT * FROM gs.contenido as L WHERE L.COId='$i'");
 		$arreglo 	= mysql_fetch_row($modelo);
 		$row_codigo = $arreglo	[0]; 
 		$row_nombre = $arreglo	[2];
-		$row_nombre2 = $arreglo	[3];
+		$row_nombre2 = $arreglo	[6];
+		
+		switch ($row_nombre2) 
+							{
+    							case 1:
+        							$row_nombre2 = 'APP';
+       							 	break;
+   								 case 2:
+       								$row_nombre2 = 'Pelicula';
+       								 break;
+								case 3:
+       								$row_nombre2 = 'Musica';
+       								 break;
+								case 4:
+       								$row_nombre2 = 'Libro';
+       								 break;
+							} 
+		
 		echo("<option value=$row_codigo>$row_nombre $row_nombre2</option>");
 		}
 		mysql_close($enlace);	

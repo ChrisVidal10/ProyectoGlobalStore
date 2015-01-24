@@ -1,0 +1,1 @@
+select P.PEMNIvelEducativo, CA.CARNombre FROM gs.persona P, gs.cargo CA, gs.contrato CO WHERE CO.FKCARId=CA.CARId and CO.FKPERId=P.PERId and P.PERTipo='EMPLEADO' 

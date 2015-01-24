@@ -90,11 +90,11 @@ insert into `GS`.`LENGUAJE`(LENId,LENNombre) values (3,'Frances');
 insert into `GS`.`LENGUAJE`(LENId,LENNombre) values (4,'Aleman');
 insert into `GS`.`LENGUAJE`(LENId,LENNombre) values (5,'Italiano');
 #inserts de PERSONA
-insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (1,19692957,'Alberto','Reveron','Jose','Granados','J-19692957-0',19/03/91,'04123694087','betoreveron@gmail.com',2,5,1,1,07/12/10,'betoreveron',12345);
-insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (2,611314,'Marina','Granados',' Sofia','Morales','J-6113314-0',10/038/64,'04125581078','marinag@gmail.com',2,5,2,2,01/12/12,'marinag',0608);
-insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (3,5605897,'Alberto','Reveron','Jose','Rivero','J-5605897-0',09/12/60,'04127140078','ajreveronr@hotmail.com',2,5,4,2,12/10/14,'ajreveronr',12345);
-insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (4,23645996,'Cristian','Reveron','Alberto','Granados','J-23645996-0',20/09/95,'04123665749','cristrgx@hotamail.com',1,3,3,4,11/12/14,'cristrx',95874);
-insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (5,12645874,'Juan','Mata','Jose','Sanchez','J-12645874-0',03/05/84,'04241235746','jmata13@gmail.com','empleado','secundaria','4','casado',19/03/14,'jmata13',25784);
+insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMStatus,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (1,19692957,'Alberto','Reveron','Jose','Granados','J-19692957-0',19/03/91,'04123694087','betoreveron@gmail.com',2,null,5,1,1,07/12/10,'betoreveron',12345);
+insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMStatus,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (2,611314,'Marina','Granados',' Sofia','Morales','J-6113314-0',10/038/64,'04125581078','marinag@gmail.com',2,null,5,2,2,01/12/12,'marinag',0608);
+insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMStatus,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (3,5605897,'Alberto','Reveron','Jose','Rivero','J-5605897-0',09/12/60,'04127140078','ajreveronr@hotmail.com',1,2,5,4,2,12/10/14,'ajreveronr',12345);
+insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMStatus,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (4,23645996,'Cristian','Reveron','Alberto','Granados','J-23645996-0',20/09/95,'04123665749','cristrgx@hotamail.com',1,1,3,3,4,11/12/14,'cristrx',95874);
+insert into `GS`.`PERSONA`(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMStatus,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) values (5,12645874,'Juan','Mata','Jose','Sanchez','J-12645874-0',03/05/84,'04241235746','jmata13@gmail.com','empleado',null,'secundaria','4','casado',19/03/14,'jmata13',25784);
 #inserts de PROMOCION
 insert into `GS`.`PROMOCION`(PRId,PRNombre,PRFechaI,PRFechaF,PRValor,PREstado,PRDescripcion,PRCondiciones) values (1,'Becazo',07/12/14,24/12/14,154.99,1,'esta promocion se aplica a cualquier libro','tienes que estar registrado en el sistema');
 insert into `GS`.`PROMOCION`(PRId,PRNombre,PRFechaI,PRFechaF,PRValor,PREstado,PRDescripcion,PRCondiciones) values (2,'Guamazo',02/05/14,02/07/14,154.99,2,'descarga dos aplicaciones por el precio de una','debes poseer un sistema opertativo Windows');
@@ -114,11 +114,11 @@ insert into `GS`.`SUBTITULO`(SUBId,SUBNombre) values (3, 'portugues');
 insert into `GS`.`SUBTITULO`(SUBId,SUBNombre) values (4, 'ingles');
 insert into `GS`.`SUBTITULO`(SUBId,SUBNombre) values (5, 'chino');
 #inserts de TIPO_SO
-insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (1,'windows');
-insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (2,'linux');
-insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (3,'Android');
-insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (4,'Symbian');
-insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (5,'windows vista');
+insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (1,'Cerrado');
+insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (2,'Cerrado');
+insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (3,'Abierto');
+insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (4,'Cerrado');
+insert into `GS`.`TIPO_SO` (TSOId,TSONombre) values (5,'Abierto');
 #inserts de TIPO_TARJETA
 insert into `GS`.`TIPO_TARJETA` (TTId,TTNombre) values (1,'VISA');
 insert into `GS`.`TIPO_TARJETA` (TTId,TTNombre) values (2,'MASTERCARD');
@@ -224,11 +224,11 @@ insert into `GS`.`PROMOCION_CONTENIDO` (FKPRId,FKCOId) values (3,3);
 insert into `GS`.`PROMOCION_CONTENIDO` (FKPRId,FKCOId) values (1,2);
 insert into `GS`.`PROMOCION_CONTENIDO` (FKPRId,FKCOId) values (2,1);
 #inserts de SO
-insert into `GS`.`SO` (SOId,SOFechaLanzamiento,FKTSOId) values (1,'10/01/15',1);
-insert into `GS`.`SO` (SOId,SOFechaLanzamiento,FKTSOId) values (2,'11/03/15',2);
-insert into `GS`.`SO` (SOId,SOFechaLanzamiento,FKTSOId) values (3,'15/02/15',4);
-insert into `GS`.`SO` (SOId,SOFechaLanzamiento,FKTSOId) values (4,'04/09/15',3);
-insert into `GS`.`SO` (SOId,SOFechaLanzamiento,FKTSOId) values (5,'05/10/15',5);
+insert into `GS`.`SO` (SOId,SONombre,SOFechaLanzamiento,FKTSOId) values (1,'Windows xp','10/01/15',1);
+insert into `GS`.`SO` (SOId,SONombre,SOFechaLanzamiento,FKTSOId) values (2,'Windows 8','11/03/15',2);
+insert into `GS`.`SO` (SOId,SONombre,SOFechaLanzamiento,FKTSOId) values (3,'Firefox OS','15/02/15',4);
+insert into `GS`.`SO` (SOId,SONombre,SOFechaLanzamiento,FKTSOId) values (4,'Mac IOS','04/09/15',3);
+insert into `GS`.`SO` (SOId,SONombre,SOFechaLanzamiento,FKTSOId) values (5,'Ubuntu','05/10/15',5);
 #inserts de SO_APLICACION
 insert into `GS`.`SO_APLICACION` (FKSOId,FKCOId) values (3,5);
 insert into `GS`.`SO_APLICACION` (FKSOId,FKCOId) values (3,3);

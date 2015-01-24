@@ -1,0 +1,1 @@
+select p.PERPnombre, p.PERPapellido, h.HISTFechaI, h.HISTFechaF FROM gs.persona p, gs.usuario_rol u, gs.accion a, gs.historial h WHERE h.FKACId=a.ACId and u.FKACId=a.ACId and u.FKPERId=p.PERId and p.PERTipo='EMPLEADO' and h.HISTTipo='SESION' 

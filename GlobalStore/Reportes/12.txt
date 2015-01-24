@@ -1,0 +1,4 @@
+select x.CONombre, x.COTipo, AVG(y.CALValor) as PromedioCalif
+from gs.contenido x, gs.calificacion y 
+where x.COTipo=1 or x.COTipo=2 or x.COTipo=3 or x.COTipo=4 and y.FKCOId=x.COId
+group by x.COTipo, x.CONombre

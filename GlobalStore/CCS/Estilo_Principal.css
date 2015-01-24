@@ -20,13 +20,12 @@ body {
 	background-image: url(../Imagenes/top-apps-1920.jpg);
 	width: 900px;
 	height: 200px;
-	background-color: #D6D6D6;
 }
 
  
 #Principal #Contenido {
 	background-color: #FFF;
-	height: 500px;
+	height: 840px;
 	float: left;
 	width: 840px;
 	padding: 30px;
@@ -34,7 +33,7 @@ body {
 
 
 #Principal #Contenido1 {
-	background-image: url("../Imagenes/carbonFiber_1680.jpg");
+	background-image: url("../Imagenes/E-va.jpg");
 	
 	height: 500px;
 	float: left;
@@ -58,10 +57,18 @@ body {
 
 
 #Principal #Contenido #Texto {
-	width: 600px;
+	width: 400px;
 	float: left;
 	margin-right: 30px;
 	font-size: 12px;
+}
+
+#Principal #Contenido #TextoContenido {
+	width: 400px;
+	float: left;
+	margin-right: 30px;
+	font-size: 12px;
+	height: 800px;
 }
 #Principal #Contenido #Imagenes {
 	width: 400px;
@@ -199,12 +206,4 @@ padding-bottom: 20px;
 #consultar, #modificar, #eliminar, #insertar, #cliente
 {
 	display: none;
-}
-#Principal #Contenido #Texto {
-	height: 500px;
-}
-#Principal #Contenido #texto2 {
-	float: right;
-	height: 500px;
-	width: 400px;
 }

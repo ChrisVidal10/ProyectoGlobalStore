@@ -21,10 +21,11 @@
 
 
 							<form id="InsertContenido" name="Insert	Contenido" action="InsertContenido.php" method="POST">
+                            
 
 							    <p>
 							      <label for ="CONombre">  *Nombre: </label>
-							      <input type="varchar" name="CONombre" id="CONombre" style="margin-left:250"  />
+							      <input name="CONombre" type="varchar" id="CONombre"  />
 							      
 							      
 							      <label for ="PERNombre"> *Costo: </label>
@@ -42,7 +43,7 @@
 							      
 							      
 							      
-							      <label for ="PERTipo"> <br />
+							      <label for ="COTipo"> <br />
 							        *Tipo: </label>
 							      <select name ="COTipo" size="1">
 							        <option value ="1">App</OPTION> 
@@ -62,7 +63,7 @@
 							      <input name="CAPUltimaActualizacion" type="date" id="CAPUltimaActualizacion" /> 
 							      
 							      <label for ="CAPDescripcion">Tamaño: </label>
-							      <input name="CAPTamaño" type="varchar" id="CAPTamaño" />
+							      <input name="CAPTamaño" type="int" id="CAPTamaño" />
 						      </p>
 							    <p> 
 							      

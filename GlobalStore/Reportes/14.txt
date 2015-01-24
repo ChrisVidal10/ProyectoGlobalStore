@@ -1,0 +1,3 @@
+SELECT p.PERPnombre, p.PERPapellido, p.PERCedula, c.COMFecha, c.COMHora
+FROM gs.persona p, gs.comentario c 
+where c.FKPERId=p.PERId and p.PERTipo=2 

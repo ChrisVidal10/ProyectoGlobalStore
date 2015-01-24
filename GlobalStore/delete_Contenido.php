@@ -1,12 +1,12 @@
 <?php
 	
-	$Persona = ($_POST['Persona']);
+	$COId = ($_POST['COId']);
 	$enlace =  mysql_connect('127.0.0.1', 'root', '');
    	if (!$enlace) 
 	{
     	die('No pudo conectarse: ' . mysql_error());
    	}
- 	$query=("delete from gs.persona where PERId='$Persona';");
+ 	$query=("delete from gs.contenido where COId='$COId';");
 	$insert = mysql_query($query) or die('Consulta fallida:' . mysql_error());
 	header("Location:LoginSuccess.php");
 	mysql_close($enlace);

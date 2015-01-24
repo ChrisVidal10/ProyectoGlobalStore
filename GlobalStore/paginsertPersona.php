@@ -50,13 +50,13 @@
 												  <input type="date" name="PERFecha_nacimiento"  />
 												  </br>
 												  
-												  <label for ="PERTipo"> <br />
+												  <label for ="PERTelefono"> <br />
 											      Telefono: </label>
-												  <input type="number" name="PERTelefono" min='1' max='2'/>
+												  <input type="varchar" name="PERTelefono"/>
 												  </br>
 												  
-												  <label for ="PERTipo"> *Correo: </label>
-												  <input type="number" name="PERCorreo" min='1' max='2'/>
+												  <label for ="PERCorreo"> *Correo: </label>
+												  <input type="varchar" name="PERCorreo" />
 												  </br>
 												  
 												  <label for ="PERTipo"> *Tipo: </label>
@@ -65,7 +65,7 @@
                                                     <option value ="2">Cliente</OPTION> 
                                                   </select>
 												  </br>
-												  <label for ="PEREMNivel_Educativo"> Nivel educativo: </label>
+												  <label for ="PEMNivel_Educativo"> Nivel educativo: </label>
                                                   <select name ="PEMNivelEducativo" size="1">
                                                     <option value ="1">NA</OPTION> 
                                                     <option value ="2">Primaria</OPTION> 
@@ -98,16 +98,14 @@
 												  </br>
 							  
 												  
-												  <label for ="PERCLFecha_Registro"> Fecha de registro: </label>
-												  <input type="date" name="PECLFechaRegistro" min='1' />
-												  </br>
+												  
 							  
 												  <label for ="PERCLFecha_Registro"> *Username: </label>
-												  <input type="date" name="PUSUsername" min='1' />
+												  <input type="varchar" name="PUSUsername" min='1' />
 												  </br>
 												  
 												  <label for ="PERCLFecha_Registro"> *Contraseña </label>
-												  <input type="date" name="PUSContraseña" min='1' />
+												  <input type="varchar" name="PUSContrasena" min='1' />
 							  </p>
 							  <p>
 							    

@@ -1,0 +1,5 @@
+SELECT p.PERPnombre, p.PERPapellido, p.PERCedula, c.CALValor, c.CALFecha,CALHora
+FROM gs.persona p, gs.calificacion c 
+where c.FKPERId=p.PERId and p.PERTipo=2 
+order by c.CALValor DESC
+LIMIT 20 

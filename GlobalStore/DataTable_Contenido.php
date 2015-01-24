@@ -134,8 +134,8 @@ position: absolute;
 #main_table_area {
 	position: absolute;
 	top: 20px;
-	height: 540px;
-	width: 800px;
+	height: 550px;
+	width: 700	px;
 	overflow: auto;
 	left: 45px;
 } 
@@ -156,30 +156,41 @@ position: absolute;
 		
 		
 
-            <th width="auto">Id persona</th> 
-            <th width="auto">Cedula de identidad</th> 
-            <th width="auto">Primer nombre</th> 
-			<th width="auto">Primer apellido</th> 
-            <th width="auto">Segundo nombre</th> 
-			<th width="auto">Segundo apellido</th>
-            <th width="auto">Rif</th>  
-            <th width="auto">Fecha de nacimiento</th> 
-            <th width="auto">Telefono</th> 
-            <th width="auto">Correo</th>  
-            <th width="auto">Tipo persona</th>  
-            <th width="auto">Empleado nivel educativo</th>  
-            <th width="auto">Grupo sanguineo</th>  
-            <th width="auto">Estado civil</th>  
-            <th width="auto">Fecha de registro</th>  
-            <th width="auto">Usuario</th> 
-            <th width="auto">Contraseña</th>  
+            <th width="auto">Id Contenido</th> 
+            <th width="auto">Fecha de Registro</th> 
+            <th width="auto">Nombre</th> 
+			<th width="auto">Costo</th> 
+            <th width="auto">Veces Valorada</th> 
+			<th width="auto">Veces Descargada</th>
+            <th width="auto">Tipo</th>  
+            <th width="auto">Descripcion App</th> 
+            <th width="auto">Ultima Actualizacion</th> 
+            <th width="auto">Tamaño</th>  
+            <th width="auto">Version</th>  
+            <th width="auto">Sistema Operativo</th> 
+            <th width="auto">Clasificacion</th>  
+            <th width="auto">Desarrollador</th>  
+            <th width="auto">Fecha Estreno</th>  
+            <th width="auto">Descripcion Pelicula</th>  
+            <th width="auto">Duracion</th> 
+            <th width="auto">Fecha Produccion</th>  
+            <th width="auto">Numero de Canciones</th> 
+            <th width="auto">Formato</th> 
+            <th width="auto">Disquera</th> 
+            <th width="auto">Reseña</th> 
+            <th width="auto">Fecha Publicacion</th> 
+            <th width="auto">Descripcion Libro</th> 
+            <th width="auto">Cantidad de Paginas</th> 
+            <th width="auto">Codigo ISBN</th> 
+            <th width="auto">Editorial</th> 
+            
         </tr> 
     </thead> 
     <tbody> 
     <?php 
 
 	   $g=1;
-	   $resultado = mysql_query("SELECT * FROM gs.persona");
+	   $resultado = mysql_query("SELECT * FROM gs.contenido");
        $num_registros = mysql_num_rows($resultado); 
 	   
                  	while ($g<=$num_registros)
@@ -188,107 +199,95 @@ position: absolute;
 					
 
 					
-							$Persona 	= mysql_query("SELECT * FROM gs.persona as p WHERE p.PERId='$g'");
+							$Persona 	= mysql_query("SELECT * FROM gs.contenido as p WHERE p.COId='$g'");
 							$arreglo 	= mysql_fetch_row($Persona);
-                 			$id = $arreglo[0]; 
-                  			$PERCedula = $arreglo[1]; 
-							$PERPnombre = $arreglo[2]; 
-							$PERPapellido = $arreglo[3];
-							$PERSnombre = $arreglo[4];
-							$PERSapellido = $arreglo[5];
-                  			$PERRif = $arreglo[6]; 
-							$PERFecha_nacimiento = $arreglo[7]; 
-							$PERCorreo = $arreglo[9]; 
-							$PERTelefono = $arreglo[8]; 
+                 			$COId = $arreglo[0]; 
+							$COFechaRegistro = $arreglo[1]; 
+                  			$CONombre = $arreglo[2]; 
+							$COCosto = $arreglo[3]; 
+							$COVecesValorada = $arreglo[4];
+							$COVecesDescagada = $arreglo[5];
+							$COTipo = $arreglo[6];
+							switch ($COTipo) 
+							{
+    							case 1:
+        							$COTipo = 'APP';
+       							 	break;
+   								 case 2:
+       								$COTipo = 'Pelicula';
+       								 break;
+								case 3:
+       								$COTipo = 'Musica';
+       								 break;
+								case 4:
+       								$COTipo = 'Libro';
+       								 break;
+							} 
+                  			$CAPDescripcion = $arreglo[7]; 
+							$CAPUltimaActualizacion = $arreglo[8]; 
+							$CAPTamaño = $arreglo[9]; 
+							$CAPVersionActual = $arreglo[10]; 
+							$CAPVersionSO = $arreglo[11]; 
+							$CAPClasificacion = $arreglo[12]; 
 							
-							$PERTipo = $arreglo[10];
-							switch ($PERTipo) 
-							{
-    							case 1:
-        							$PERTipo = 'Empleado';
-       							 	break;
-   								 case 2:
-       								$PERTipo = 'Cliente';
-       								 break;
-							} 
-							$PEMNivelEducativo = $arreglo[11]; 
-							switch ($PEMNivelEducativo) 
-							{
-    							case 1:
-        							$PEMNivelEducativo = 'NA';
-       							 	break;
-   								 case 2:
-       								$PEMNivelEducativo = 'Primaria';
-       								 break;
-									 case 3:
-        							$PEMNivelEducativo = 'Secundaria';
-       							 	break;
-   								 case 4:
-       								$PEMNivelEducativo = 'Tecnico';
-       								 break;
-									 case 5:
-        							$PEMNivelEducativo = 'Licenciado';
-       							 	break;
-   								 case 6:
-       								$PEMNivelEducativo = 'Postgrado';
-       								 break;
-							} 
-							$PEMGrupoSanguineo = $arreglo[12];
-							switch ($PEMGrupoSanguineo) 
-							{
-    							case 1:
-        							$PEMGrupoSanguineo = 'A';
-       							 	break;
-   								 case 2:
-       								$PEMGrupoSanguineo = 'B';
-       								 break;
-									 case 3:
-        							$PEMGrupoSanguineo = 'AB';
-       							 	break;
-   								 case 4:
-       								$PEMGrupoSanguineo = 'O';
-       								 break;	 
-							}  
-							$PECLEdoCivil = $arreglo[13]; 
-							switch ($PECLEdoCivil) 
-							{
-    							case 1:
-        							$PECLEdoCivil = 'Soltero';
-       							 	break;
-   								 case 2:
-       								$PECLEdoCivil = 'Casado';
-       								 break;
-									 case 3:
-        							$PECLEdoCivil = 'Divorciado';
-       							 	break;
-   								 case 4:
-       								$PECLEdoCivil = 'Viudo';
-       								 break;	 
-							}
-							$PECLFechaRegistro = $arreglo[14]; 
-							$PUSUsername = $arreglo[15]; 
-							$PUSContraseña = $arreglo[16]; 
+							$FKDEId = $arreglo[13]; 
+							$Desa 	= mysql_query("SELECT DENombre FROM gs.desarrollador as p WHERE p.DEId='$FKDEId'");
+							$arreglo1 	= mysql_fetch_row($Desa);
+							$Desarrollador = $arreglo1[0];		
+							
+							$CPEFechaEstreno = $arreglo[14]; 
+							$CPEDescripcion = $arreglo[15]; 
+							$CPEDuracion = $arreglo[16]; 
+							$CMUFechaProduccion = $arreglo[17]; 
+							$CMUNumeroCanciones = $arreglo[18]; 
+							$CMUFormato = $arreglo[19]; 
+							
+							$FKDISQId = $arreglo[20]; 
+							$Disq 	= mysql_query("SELECT DISQNombre FROM gs.disquera as p WHERE p.DISQId='$FKDISQId'");
+							$arreglo2 	= mysql_fetch_row($Disq);
+							$Disquera = $arreglo2[0];	
+							
+							$CLBReseña = $arreglo[21]; 
+							$CLBFechaPublicacion = $arreglo[22]; 
+							$CLBDescripcion = $arreglo[23]; 
+							$CLBCantidadPaginas = $arreglo[24]; 
+							$CLBCodigoISBN = $arreglo[25]; 
+							
+							$FKEDId = $arreglo[26]; 
+							$Edit 	= mysql_query("SELECT EDNombre FROM gs.disquera as p WHERE p.EDId='$FKEDId'");
+							$arreglo3 	= mysql_fetch_row($Edit);
+							$Editorial = $arreglo3[0];	
 							 
 							
 							
 							echo "<tr class='gradeA'> 
-							<td width='auto' class='center'>".$id."</td> 
-							<td width='auto' class='center'>".$PERCedula."</td> 
-							<td width='auto' class='center'>".$PERPnombre."</td>
-							<td width='auto' class='center'>".$PERPapellido."</td>   
-							<td width='auto' class='center'>".$PERSnombre."</td>   
-							<td width='auto' class='center'>".$PERSapellido."</td>   
-							<td width='auto' class='center'>".$PERRif."</td> 
-							<td width='auto' class='center'>".$PERFecha_nacimiento."</td> 
-							<td width='auto' class='center'>".$PERTelefono."</td> 
-							<td width='auto' class='center'>".$PERCorreo."</td> 
-							<td width='auto' class='center'>".$PERTipo."</td> 
-							<td width='auto' class='center'>".$PEMNivelEducativo."</td> 
-							<td width='auto' class='center'>".$PEMGrupoSanguineo."</td> 
-							<td width='auto' class='center'>".$PECLEdoCivil."</td> 
-							<td width='auto' class='center'>".$PECLFechaRegistro."</td> 
-							<td width='auto' class='center'>".$PUSContraseña."</td> 
-							<td width='auto' class='center'>".$PUSContraseña."</td> 
+							<td width='auto' class='center'>".$COId."</td> 
+							<td width='auto' class='center'>".$COFechaRegistro."</td> 
+							<td width='auto' class='center'>".$CONombre."</td>
+							<td width='auto' class='center'>".$COCosto."</td>   
+							<td width='auto' class='center'>".$COVecesValorada."</td>   
+							<td width='auto' class='center'>".$COVecesDescagada."</td>   
+							<td width='auto' class='center'>".$COTipo."</td> 
+							<td width='auto' class='center'>".$CAPDescripcion."</td> 
+							<td width='auto' class='center'>".$CAPUltimaActualizacion."</td> 
+							<td width='auto' class='center'>".$CAPTamaño."</td> 
+							<td width='auto' class='center'>".$CAPVersionActual."</td> 
+							<td width='auto' class='center'>".$CAPVersionSO."</td> 
+							<td width='auto' class='center'>".$CAPClasificacion."</td> 
+							<td width='auto' class='center'>".$Desarrollador."</td> 
+							<td width='auto' class='center'>".$CPEFechaEstreno."</td> 
+							<td width='auto' class='center'>".$CPEDescripcion."</td> 
+							<td width='auto' class='center'>".$CPEDuracion."</td> 
+							<td width='auto' class='center'>".$CMUFechaProduccion."</td> 
+							<td width='auto' class='center'>".$CMUNumeroCanciones."</td> 
+							<td width='auto' class='center'>".$CMUFormato."</td> 
+							<td width='auto' class='center'>".$Disquera."</td>
+							<td width='auto' class='center'>".$CLBReseña."</td>
+							<td width='auto' class='center'>".$CLBFechaPublicacion."</td>
+							<td width='auto' class='center'>".$CLBDescripcion."</td>
+							<td width='auto' class='center'>".$CLBCantidadPaginas."</td> 
+							<td width='auto' class='center'>".$CLBCodigoISBN."</td> 
+							<td width='auto' class='center'>".$Editorial."</td> 
 						 	</tr>";
 							$g++; 
        				} 

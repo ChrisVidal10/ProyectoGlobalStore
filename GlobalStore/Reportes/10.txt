@@ -1,0 +1,1 @@
+select p.PRNombre, p.PRFechaI, p.PRFechaF FROM gs.promocion p WHERE p.PRId LIMIT 3

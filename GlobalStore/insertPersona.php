@@ -27,15 +27,17 @@
 	
 	$PECLEdoCivil = $_POST[('PECLEdoCivil')];
 	
-	$PECLFechaRegistro = $_POST[('PECLFechaRegistro')];
+	$PCLFechaRegistro = $_POST[('PCLFechaRegistro')];
 	
 	$PUSUsername = $_POST[('PUSUsername')];
 	
-	$PUSContraseña = $_POST[('PUSContraseña')];
+	$PUSContrasena = $_POST[('PUSContrasena')];
+	
+	$fecha = date("Y-m-d");
 	
 
 	
-	if($PERCedula=="" OR $PERPnombre=="" OR $PERPapellido=="" OR $PERFecha_nacimiento=="" OR $PERCorreo=="" OR $PERTipo=="" OR $PUSUsername=="" OR $PUSContraseña=="")
+	if($PERCedula=="" OR $PERPnombre=="" OR $PERPapellido=="" OR $PERFecha_nacimiento=="" OR $PERCorreo=="" OR $PERTipo=="" OR $PUSUsername=="" OR $PUSContrasena=="")
 	{
 		echo"Ningun campo obligatorio puede estar vacio";
 	}
@@ -60,19 +62,38 @@
 			$numnuevo = $numero +1;
 			echo 'Se ha insertado exitosamente con el ID:';
 			echo $numnuevo;  
-		
+	
 			if  ($PERTipo==1)
 			{
-			$query=("insert into gs.persona(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PECLFechaRegistro,PUSUsername,PUSContraseña) 
-			values ('$numnuevo','$PERCedula','$PERPnombre','$PERPapellido','$PERSnombre','$PERSapellido','$PERRif','$PERFecha_nacimiento','$PERTelefono','$PERCorreo','$PERTipo','$PEMNivelEducativo','$PEMGrupoSanguineo',NULL,NULL,'$PUSUsername','$PUSContraseña')");
+				if ($PERSnombre=="")
+					$PERSnombre==NULL;
+				if ($PERSapellido=="")
+					$PERSapellido==NULL;	
+				if ($PERRif=="")
+					$PERRif==NULL;
+				if ($PERTelefono=="")
+					$PERTelefono==NULL;
+							
+			$query=("insert into gs.persona(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) 
+			values ('$numnuevo','$PERCedula','$PERPnombre','$PERPapellido','$PERSnombre','$PERSapellido','$PERRif','$PERFecha_nacimiento','$PERTelefono','$PERCorreo','$PERTipo','$PEMNivelEducativo','$PEMGrupoSanguineo',NULL,NULL,'$PUSUsername','$PUSContrasena')");
+			
 			$insert = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 			//header("Location:Paginsert.php");
 			}
 			
 			else if ($PERTipo==2)
 			{
-			 $query=("insert into gs.persona(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PECLFechaRegistro,PUSUsername,PUSContraseña) 
-			values ('$numnuevo','$PERCedula','$PERPnombre','$PERPapellido','$PERSnombre','$PERSapellido','$PERRif','$PERFecha_nacimiento','$PERTelefono','$PERCorreo','$PERTipo',NULL,NULL,'$PECLEdoCivil','$PECLFechaRegistro','$PUSUsername','$PUSContraseña')");
+				if ($PERSnombre=="")
+					$PERSnombre==NULL;
+				if ($PERSapellido=="")
+					$PERSapellido==NULL;	
+				if ($PERRif=="")
+					$PERRif==NULL;
+				if ($PERTelefono=="")
+					$PERTelefono==NULL;
+					
+			 $query=("insert into gs.persona(PERId,PERCedula,PERPnombre,PERPapellido,PERSnombre,PERSapellido,PERRif,PERFecha_nacimiento,PERTelefono,PERCorreo,PERTipo,PEMNivelEducativo,PEMGrupoSanguineo,PECLEdoCivil,PCLFechaRegistro,PUSUsername,PUSContrasena) 
+			values ('$numnuevo','$PERCedula','$PERPnombre','$PERPapellido','$PERSnombre','$PERSapellido','$PERRif','$PERFecha_nacimiento','$PERTelefono','$PERCorreo','$PERTipo',NULL,NULL,'$PECLEdoCivil','$fecha','$PUSUsername','$PUSContrasena')");
 			$insert = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 			}
 		}			                                       		

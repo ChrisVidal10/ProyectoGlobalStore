@@ -1,0 +1,5 @@
+select DISTINCT (x.CONombre), y.CALValor, z.PERPnombre, z.PERPapellido
+from gs.contenido x, gs.calificacion y, gs.persona z
+where y.FKCOId=x.COId and y.FKPERId=z.PERId and z.PERTipo=2
+order by y.CALValor desc 
+LIMIT 25

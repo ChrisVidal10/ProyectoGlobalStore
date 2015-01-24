@@ -1,0 +1,1 @@
+select CA.CARNombre, CA.CARSalario, P.PERPNombre, P.PERPApellido FROM gs.cargo as CA, gs.persona as P, gs.contrato as CO WHERE CO.FKCARId=CA.CARId and CO.FKPERId=P.PERId 

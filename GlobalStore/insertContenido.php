@@ -12,42 +12,75 @@
 	$COTipo = $_POST[('COTipo')];
 	
 	$CAPDescripcion = $_POST[('CAPDescripcion')];
-	
+		if ($CAPDescripcion =="")
+			$CAPDescripcion=NULL;
+			
 	$CAPUltimaActualizacion = $_POST[('CAPUltimaActualizacion')];
-	
+		if ($CAPUltimaActualizacion =="")
+			$CAPUltimaActualizacion=NULL;
+			
 	 $CAPVersionActual = $_POST[('CAPVersionActual')];
-	 
+	 	if ($CAPVersionActual =="")
+			$CAPVersionActual=NULL;
+			
 	 $CAPVersionSO = $_POST[('CAPVersionSO')];
+	 	if ($CAPVersionActual =="")
+			$CAPVersionActual=NULL;
 	 
 	 $CAPClasificacion = $_POST[('CAPClasificacion')];
-	
+			if ($CAPClasificacion =="")
+			$CAPClasificacion=NULL;
+			
 	$FKDEId = $_POST[('FKDEId')];
 	
 	$CPEFechaEstreno = $_POST[('CPEFechaEstreno')];
+		if ($CPEFechaEstreno =="")
+			$CPEFechaEstreno=NULL;
 	
 	$CPEDescripcion = $_POST[('CPEDescripcion')];
-	
+		if ($CPEDescripcion =="")
+			$CPEDescripcion=NULL;
+			
 	$CPEDuracion = $_POST[('CPEDuracion')];
-	
+		if ($CPEDuracion =="")
+			$CPEDuracion=NULL;
+			
 	$CMUFechaProduccion = $_POST[('CMUFechaProduccion')];
-	
+		if ($CMUFechaProduccion =="")
+			$CMUFechaProduccion=NULL;
+			
 	$CMUNumeroCanciones = $_POST[('CMUNumeroCanciones')];
-	
+		if ($CMUNumeroCanciones =="")
+			$CMUNumeroCanciones=NULL;
+			
 	 $CMUFormato = $_POST[('CMUFormato')];
-	 
+	 	if ($CMUFormato =="")
+			$CMUFormato=NULL;
+			
 	 $FKDISQId = $_POST[('FKDISQId')];
-	
+			
 	$CLBReseña = $_POST[('CLBReseña')];
-	
+		if ($CLBReseña =="")
+			$CLBReseña=NULL;
+			
 	$CLBFechaPublicacion = $_POST[('CLBFechaPublicacion')];
-	
+	if ($CLBFechaPublicacion =="")
+			$CLBFechaPublicacion=NULL;
+			
 	$CLBDescripcion = $_POST[('CLBDescripcion')];
-	
+		if ($CLBDescripcion =="")
+			$CLBDescripcion=NULL;
+			
 	$CLBCantidadPaginas = $_POST[('CLBCantidadPaginas')];
-	
+		if ($CLBCantidadPaginas =="")
+			$CLBCantidadPaginas=NULL;
+			
 	$CLBCodigoISBN = $_POST[('CLBCodigoISBN')];
-	
+		if ($CLBCodigoISBN =="")
+			$CLBCodigoISBN=NULL;
+			
 	$FKEDId = $_POST[('FKEDId')];
+		
 
 	$fecha = date("Y-m-d");
 	
@@ -77,7 +110,8 @@
 			
 			if  ($COTipo==1)
 			{
-			$query=("insert into gs.contenido (COId,COFechaRegistro,CONombre,COCosto,COVecesValorada,COVecesDescagada,COTipo,CAPDescripcion,CAPUltimaActualizacion,CAPTamaño,CAPVersionActual,CAPVersionSO,CAPClasificacion,FKDEId,CPEFechaEstreno,CPEDescripcion,CPEDuracion,CMUFechaProduccion,CMUNumeroCanciones,CMUFormato,FKDISQId,CLBReseña,CLBFechaPublicacion,CLBDescripcion,CLBCantidadPaginas,CLBCodigoISBN,FKEDId) values (1,14/06/12,'Candy Crush',10.99,10,5,1,'Descarga gratis Candy Crush y disfruta de mas de 140 niveles y nuevos modos de juego',11/11/14,15,'1.2.04','Windows 8','25',1,NULL,NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,3)");
+				echo "entro";
+			$query=("insert into gs.contenido values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo','$CAPDescripcion','$CAPUltimaActualizacion','$CAPTamaño','$CAPVersionActual','$CAPVersionSO','$CAPClasificacion','$FKDEId',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)");
  
 			$insert = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 			echo 'Se ha insertado exitosamente con el ID:';
@@ -86,21 +120,21 @@
 			
 			else if ($COTipo==2)
 			{
-			 $query=("insert into GS.CONTENIDO (COId,COFechaRegistro,CONombre,COCosto,COVecesValorada,COVecesDescagada,COTipo,CAPDescripcion,CAPUltimaActualizacion,CAPTamaño,CAPVersionActual,CAPVersionSO,CAPClasificacion,FKDEId,CPEFechaEstreno,CPEDescripcion,CPEDuracion,CMUFechaProduccion,CMUNumeroCanciones,CMUFormato,FKDISQId,CLBReseña,CLBFechaPublicacion,CLBDescripcion,CLBCantidadPaginas,CLBCodigoISBN,FKEDId) values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$CPEFechaEstreno','$CPEDescripcion,'$CPEDuracion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)");
+			 $query=("insert into GS.CONTENIDO values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$CPEFechaEstreno','$CPEDescripcion','$CPEDuracion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)");
 			$insert = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 			echo 'Se ha insertado exitosamente con el ID:';
 			echo $numnuevo; 
 			}
 			else if ($COTipo==3)
 			{
-				$query=("insert into GS.CONTENIDO (COId,COFechaRegistro,CONombre,COCosto,COVecesValorada,COVecesDescagada,COTipo,CAPDescripcion,CAPUltimaActualizacion,CAPTamaño,CAPVersionActual,CAPVersionSO,CAPClasificacion,FKDEId,CPEFechaEstreno,CPEDescripcion,CPEDuracion,CMUFechaProduccion,CMUNumeroCanciones,CMUFormato,FKDISQId,CLBReseña,CLBFechaPublicacion,CLBDescripcion,CLBCantidadPaginas,CLBCodigoISBN,FKEDId) values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$CMUFechaProduccion','$CMUNumeroCanciones','$CMUFormato','$FKDISQId',NULL,NULL,NULL,NULL,NULL,NULL)");
+				$query=("insert into GS.CONTENIDO values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$CMUFechaProduccion','$CMUNumeroCanciones','$CMUFormato','$FKDISQId',NULL,NULL,NULL,NULL,NULL,NULL)");
 			$insert = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 			echo 'Se ha insertado exitosamente con el ID:';
 			echo $numnuevo; 
 			}
-			else
+			else if ($COTipo==4)
 			{
-				$query=("insert into GS.CONTENIDO (COId,COFechaRegistro,CONombre,COCosto,COVecesValorada,COVecesDescagada,COTipo,CAPDescripcion,CAPUltimaActualizacion,CAPTamaño,CAPVersionActual,CAPVersionSO,CAPClasificacion,FKDEId,CPEFechaEstreno,CPEDescripcion,CPEDuracion,CMUFechaProduccion,CMUNumeroCanciones,CMUFormato,FKDISQId,CLBReseña,CLBFechaPublicacion,CLBDescripcion,CLBCantidadPaginas,CLBCodigoISBN,FKEDId) values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$CLBReseña','$CLBFechaPublicacion','$CLBDescripcion','$CLBCantidadPaginas','$CLBCodigoISBN','$FKEDId')");	
+				$query=("insert into GS.CONTENIDO values ('$numnuevo','$fecha','$CONombre','$COCosto','$COVecesValorada','$COVecesDescagada','$COTipo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$CLBReseña','$CLBFechaPublicacion','$CLBDescripcion','$CLBCantidadPaginas','$CLBCodigoISBN','$FKEDId')");	
 								$insert = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
 			echo 'Se ha insertado exitosamente con el ID:';
 			echo $numnuevo; 
